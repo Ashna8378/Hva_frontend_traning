@@ -1,0 +1,15 @@
+h2{
+    text-decoration: underline;
+    text-align: center;
+}
+
+p{
+    line-height: 1.6;
+    color: blue;
+}
+
+div{
+    background-color: lightpink;
+    font-family: 'Times New Roman', Times, serif;
+}
+

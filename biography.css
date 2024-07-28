@@ -1,0 +1,17 @@
+h1{
+    color: blue;
+}
+
+body{
+    background-color: pink;
+}
+
+p:first-of-type{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+p:last-of-type{
+    font-weight: bold;
+    font-style: italic;
+}
