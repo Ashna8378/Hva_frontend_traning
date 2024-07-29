@@ -1,0 +1,14 @@
+h3{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+p:first-of-type{
+    font-style: italic;
+    text-align: justify;
+}
+
+p:last-of-type{
+    background-color: #f9f9f9;
+    line-height: 1.8;
+}
