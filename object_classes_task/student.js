@@ -1,4 +1,4 @@
-a. Define and Populate the student Object:
+// a. Define and Populate the student Object:
 
 const student = {}
 student.name = "Ashna"
@@ -8,14 +8,14 @@ student.age = 21
 console.log(student)
 
 
-b. Update the student Object:
+// b. Update the student Object:
 
 student.age = 10
 
 console.log(student.age)
 
 
-c. Add Method and Nested Object to student:
+// c. Add Method and Nested Object to student:
 
 student.greet = function(){
     console.log(`Hello, ${this.name}!`)
@@ -36,7 +36,7 @@ student.address.pin_code = 1228833
 console.log(student.address)
 
 
-d. Create and Populate the friend Object:
+// d. Create and Populate the friend Object:
 
 
 let friend = {
@@ -58,7 +58,7 @@ friend.greet()
 console.log(friend)
 
 
-e. Create and Populate the topper Object:
+// e. Create and Populate the topper Object:
 
 
 let topper = {
