@@ -1,15 +1,38 @@
-h2{
-    text-decoration: underline;
-    text-align: center;
+body{
+    font-family: Georgia, serif;
+}
+
+
+h1{ 
+    color: rgb(25, 226, 25);
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.article-container{
+    background-color: lightpink;
+    text-align: justify;
+    padding: 5px;
+}
+
+.article-meta{
+    color: gray;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: italic;
+    text-decoration: none;
 }
 
 p{
+    font-size: 14px;
     line-height: 1.6;
-    color: blue;
 }
 
-div{
-    background-color: lightpink;
-    font-family: 'Times New Roman', Times, serif;
-}
+
+
+
+
+
+
+
 
