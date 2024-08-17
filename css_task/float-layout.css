@@ -1,0 +1,46 @@
+/* Styling the header, footer, and main-content */
+.header, .footer, .main-content {
+    border: 2px solid black;
+}
+
+/* Header and Footer Styles */
+.header, .footer {
+    background-color: #4CAF50;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+}
+
+/* Styling the rows */
+.row {
+    margin-bottom: 20px;
+}
+
+/* Column Styles for 2-Column Layout */
+.column-2 {
+    float: left;
+    width: 50%;
+    height: 200px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Column Styles for 3-Column Layout */
+.column-3 {
+    float: left;
+    width: 33.3%;
+    height: 200px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+/* Clearfix for fixing float issues */
+.row::after {
+    content: "";
+    display: block;
+    clear: both;
+}
