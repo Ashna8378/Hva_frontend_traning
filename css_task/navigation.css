@@ -10,22 +10,23 @@ ul{
 }
 
 #contact{
-     color: yellow;
+     color: green;
      font-weight: bold;
 }
 
 
-nav ul > li::before {
+li::before {
     content: "•";
     color: red;
     margin-right: 5px;
 }
 
 
-ul > li {
+.navbar > ul > li {
     padding: 10px; 
     background-color: #f0f0f0; 
     margin-bottom: 5px;
+
 }
 
 

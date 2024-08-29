@@ -1,0 +1,22 @@
+body{
+    background-color: skyblue;
+}
+
+h1{
+    color: red;
+}
+
+p:first-of-type{
+    font-family: Arial;
+    font-size: 16px;
+    
+}
+
+p:last-of-type{
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+
+

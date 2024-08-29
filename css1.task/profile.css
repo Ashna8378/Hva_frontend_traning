@@ -1,0 +1,21 @@
+h1{
+    font-size: 24px;
+    color: red;
+}
+
+p{
+    font-size: 20px;
+    line-height: 5px;
+}
+
+.about-me{
+    padding: 5px;
+    background-color: pink;
+}
+
+
+#profile-pic{
+    width: 200px;
+    border-radius: 25px;
+}
+

@@ -1,0 +1,19 @@
+.product-card h3{
+    font-size: 20px;
+    color: green;
+}
+
+.product-card p{
+    font-size: 20px;
+    color: blue;
+}
+
+
+button[type="button"]{
+    background-color: red;
+    padding: 100px;
+}
+
+li:hover{
+    background-color: brown;
+}
