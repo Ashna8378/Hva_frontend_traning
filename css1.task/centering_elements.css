@@ -21,12 +21,14 @@
 }
 
 .block-element{
-    /* margin: 10px auto; */
+    margin: 10px auto;
     width: 200px;
     border: 2px solid #333;
     padding: 10px;
-    text-align: center;
+    /* text-align: center; */    
 }
+
+                                  
 
 
 
