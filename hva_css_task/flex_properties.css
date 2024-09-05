@@ -3,7 +3,7 @@
 .container{
     display: flex;
     border: 2px dashed black;
-    width: 500px;
+    /* width: 500px; */
     margin: auto;
 }
 
@@ -16,11 +16,14 @@
 
 }
 
-.box1, .box2, .box3 {
+/* .box1, .box2, .box3 {
     flex-basis: 200px;
+} */
+.box1{
+    flex-basis: 200;
 }
 
-.box1, .box2, .box3 {
+/* .box1, .box2, .box3 {
     flex-shrink: 0;
 }
 
@@ -34,11 +37,11 @@
 
 .box3 {
     flex-shrink: 2;
-}
+} */
 
 
 
-
+/* 
  .box1 {
     flex-shrink: 0;
 }
@@ -49,9 +52,9 @@
 
 .box3 {
     flex-shrink: 3;
-} 
+}  */
 
-
+/* 
 .box1 {
     flex-grow: 2;
 }
@@ -62,11 +65,11 @@
 
 .box3 {
     flex-grow: 1;
-}
+} */
 
 
 
-.box1 {
+/* .box1 {
     flex-grow: 3;
 }
 
@@ -76,4 +79,4 @@
 
 .box3 {
     flex-grow: 2;
-}
+} */
