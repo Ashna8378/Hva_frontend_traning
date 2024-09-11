@@ -1,0 +1,277 @@
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Here I have used css for navbar */
+
+nav{
+    display: flex;
+    background-color: #333;
+    color: white;
+    height: 60px;
+    
+
+}
+
+.nav-links{
+    margin: auto;
+    
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    margin: 0 15px;
+    font-size: large;
+}
+
+
+.nav-heading{
+    
+    padding: 14px 20px;
+    font-size: 25px;
+    font-weight: bold;
+    
+   
+}
+
+
+/* form here I have used css for my home-section */
+
+.home{
+    display: flex;
+    align-items: center;
+    background-color: #f4f4f4;
+    height: 100vh;
+    padding: 0 32px;
+   
+
+}
+
+span{
+    color: blue;
+}
+.home-text{
+    flex: 1;   
+    font-size: 2em;
+     
+}
+
+.home-text h1{
+    font-size: 3em;
+    margin-bottom: 0.3em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.home-text p{
+    font-size: 1.5em;
+}
+
+.home-image{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}
+.home-image img{
+    border-radius: 50%;
+    width: 45%;
+}
+
+/* form here I have used css for my about-section */
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh; /* Full viewport height */
+    padding: 0 32px;
+    background-color: #f0f0f0; /* Optional background color */
+}
+
+/* Styling for the image section */
+.about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image img {
+    border-radius: 50%; /* Circular image */
+    width: 55%; /* Adjust image size */
+    max-width: 300px; /* Limit maximum width */
+}
+
+/* Styling for the text section */
+.about-text {
+    flex: 1;
+    padding-left: 30px; /* Space between image and text */
+}
+
+.about-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333; /* Heading color */
+}
+
+.about-text p {
+    line-height: 1.6;
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Here I have write project-section css */
+
+
+
+
+
+
+
+
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Full viewport height */
+    width: 100vw;  /* Full viewport width */
+    background-color: #f9f9f9; /* Light background color */
+    padding: 20px;
+}
+
+.projects h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.projects-list {
+    display: flex;
+    flex-wrap: wrap; /* Allows cards to wrap onto the next row if needed */
+    justify-content: space-around; /* Space between cards */
+    gap: 20px; /* Space between cards */
+    width: 100%;
+    max-width: 1200px; /* Limit max width of the card container */
+}
+
+.project-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 30%; /* Adjust the width of each card */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.project-card h3 {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.project-card p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.project-card a {
+    text-decoration: none;
+    color: #007bff; /* Link color */
+    font-weight: bold;
+}
+
+.project-card a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+
+/* Contact Section Styling */
+.contact {
+    display: flex; /* Flexbox layout for section */
+    height: 100vh; /* Full viewport height */
+    width: 100vw; /* Full viewport width */
+    box-sizing: border-box; /* Include padding and border in width/height */
+    padding: 2em; /* Optional: Add padding around the section */
+    background-color: #f4f4f4; /* Optional: Background color for visibility */
+}
+
+/* Contact Content Flexbox Layout */
+.contact-content {
+    display: flex; /* Flexbox for content layout */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    width: 100%; /* Full width of the section */
+}
+
+/* Heading */
+.contact-content h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #333; /* Dark text for contrast */
+    text-align: center; /* Center text horizontally */
+}
+
+/* Form Styling */
+form {
+    display: flex; /* Flexbox for form layout */
+    flex-direction: column; /* Stack form elements vertically */
+    width: 100%; /* Full width of the form container */
+    max-width: 600px; /* Optional: Limit form width for better readability */
+    background-color: #fff; /* White background for the form */
+    border: 1px solid #ddd; /* Border for separation */
+    border-radius: 8px; /* Rounded corners */
+    padding: 2em; /* Padding inside the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Form Group Styling */
+.form-group {
+    margin-bottom: 1em; /* Space between form fields */
+}
+
+/* Form Labels */
+.form-group label {
+    display: block; /* Block display for labels */
+    margin-bottom: 0.5em; /* Space below label */
+    color: #333; /* Dark text color */
+}
+
+/* Form Inputs and Textareas */
+.form-group input,
+.form-group textarea {
+    width: 100%; /* Full width of the form group */
+    padding: 0.5em; /* Padding inside inputs/textarea */
+    border: 1px solid #ddd; /* Border for inputs/textarea */
+    border-radius: 4px; /* Rounded corners */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+/* Submit Button */
+button {
+    padding: 0.75em 1.5em; /* Padding inside the button */
+    font-size: 1em; /* Font size for button text */
+    border: none; /* Remove default border */
+    border-radius: 4px; /* Rounded corners */
+    background-color: #007BFF; /* Primary color for the button */
+    color: #fff; /* White text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    margin-top: 1em; /* Space above the button */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker color on hover */
+}
+

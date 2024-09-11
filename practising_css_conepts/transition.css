@@ -1,0 +1,24 @@
+
+.box{
+    width: 100px;
+    height: 100px;
+    background: lightpink;
+    /* transition-property: background;
+    transition-duration:1s ;
+    transition-timing-function: ease-in; */
+    
+    /* transition: background 1s ease-in,
+                width 1s ease-in,
+                height 1s ease-in */
+    transition: all 1s ease-in;
+}
+
+
+
+
+.box:hover{
+    background: red;
+    width: 200px;
+    height: 150px;
+}
+
