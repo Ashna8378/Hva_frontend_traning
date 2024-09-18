@@ -1,0 +1,40 @@
+
+
+
+input[type = "text"]{
+    color: aliceblue;
+    background-color: aqua;
+}
+
+input[type = "password"]{
+    background-color:red;
+}
+
+/* a[href = "https://google.co.in"]{
+    color: red;
+    
+}
+
+
+a[href *= "google"]{
+    color: red;
+    
+}
+
+a[href *= "flipkart"]{
+    color: green;
+    
+} */
+
+
+/* start from https select  */
+
+/* a[href ^= "https"]{
+    color: green;
+} */
+
+/* end from .com  select*/
+
+a[href $= ".com"]{
+    color: brown;
+}

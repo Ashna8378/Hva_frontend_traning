@@ -1,0 +1,37 @@
+
+body{
+    font-family:'Poppins';
+}
+h2{
+    text-align: center;
+    background-color: grey;
+    padding: 20px;
+    width: 950px;
+    margin: 20px auto;
+}
+
+.first{
+    border: 2px solid black;
+    width: 950px;
+    margin: 10px auto;
+    padding: 10px;
+
+}
+
+.second{
+    border: 2px solid black;
+    width: 950px;
+    margin: 10px auto;  
+    padding: 10px;
+
+}
+
+
+div h3{
+    text-transform: uppercase;
+}
+
+
+
+
+

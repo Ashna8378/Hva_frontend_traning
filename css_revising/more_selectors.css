@@ -1,0 +1,49 @@
+/* *{
+   color: blue;
+} */
+
+
+header{
+    background-color: #f0ebeb;
+}
+
+section.my-articles{
+
+   background-color: #f2e9e9;
+}
+
+/* descendent selectors combinators */
+header p{
+    color:red
+}
+
+
+li a{
+    color: red;
+}
+/* 
+section.my-articles h2{
+    color: green;
+} */
+
+/* direct child selectors */
+
+
+section.my-articles > h2{
+    color: green;
+}
+
+/* adjacent selectors */
+
+section.my-articles h2+p{
+    color: orange;
+}
+
+
+/* h2+p{
+    color: orange;
+} */
+
+ul+p{
+    color: green;
+}
