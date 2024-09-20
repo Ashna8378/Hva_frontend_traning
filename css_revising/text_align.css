@@ -1,0 +1,16 @@
+h1{
+    background: lightblue;
+    /* text-align: center; */
+    width: 500px;
+    text-align: right;
+    padding-left: 10px;
+}
+
+a{
+    display: inline-block;
+    background-color: lightcoral;
+    text-align: center;
+    width: 500px;
+}
+
+/* we can't use textalign for inline elements */

@@ -1,0 +1,28 @@
+/* state of a link  */
+/* link */
+/* visited */
+/* hover */
+/* active */
+
+
+a:link{
+    color: orange;
+}
+
+a:visited{
+    color: blue;
+}
+
+a:hover{
+    color: green;
+}
+
+a:active{
+    color: black;
+}
+
+
+
+
+
+
