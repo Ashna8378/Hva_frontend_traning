@@ -1,0 +1,55 @@
+/* link, visited, hover, active */
+
+/* a:link{
+    color: orange;
+}
+
+a:visited{
+    color: red;
+}
+
+a:hover{
+    color: green;
+}
+
+a:active{
+    color: black;
+}
+
+p:hover{
+    color: green;
+}
+
+p:active{
+    background-color: azure;
+} */
+
+/* 
+p:first-child{
+    color: red;
+} */
+
+/* 
+p:first-of-type{
+    color: red;
+}
+  */
+
+
+ /* p:last-child{
+    color: green;
+} */
+
+/* p:last-of-type{
+   color: green;
+} */
+
+
+/* p:nth-child(2n){
+    color: green;
+}
+ */
+
+ p:nth-of-type(2){
+    color: red;
+ }

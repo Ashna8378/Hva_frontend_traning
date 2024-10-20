@@ -1,19 +1,28 @@
-.product-card h3{
-    font-size: 20px;
-    color: green;
+.product-card h3 {
+    font-size: 24px; 
+    color: #333; 
 }
 
-.product-card p{
-    font-size: 20px;
-    color: blue;
+.product-card p {
+    font-size: 16px; 
+    color: #555; 
+    line-height: 1.5; 
 }
 
-
-button[type="button"]{
-    background-color: red;
-    padding: 100px;
+button[type="button"] {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-li:hover{
-    background-color: brown;
+button[type="button"]:hover {
+    background-color: #45a049; 
+}
+
+.features-list li:hover {
+    background-color: #f0f0f0; 
+    cursor: pointer;
 }

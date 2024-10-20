@@ -1,0 +1,65 @@
+/* p{
+    font-size: 16px;
+    font-size: 32px; */
+
+    /* 1 inch == 96px */
+    /* font-size: 1in; */
+    /* 1in == 2.54cm */
+
+/* } */
+
+/* percent unit */
+
+/* div{
+    border: 2px solid red;
+    font-size: 10px;
+    width: 50%;
+    
+}
+
+p{
+  border: 1px solid green;
+  width: 50%;
+  background: lightblue;
+  font-size: 100%;
+  margin: 4px auto;
+  text-align: center;
+
+} */
+
+/* rem unit */
+
+/* html{
+    font-size: 10px;
+}
+
+
+.box1{
+  font-size: 2rem;
+ 
+}
+
+
+.text-content{
+    font-size: 3rem;
+    border: 1rem solid red;
+    margin: 0.5rem;
+    padding: 4.rem;
+} */
+
+/* em relative unit  */
+
+
+h1{
+    font-size: 2em;
+    border: 2em solid black;
+    padding: 3rem;
+}
+
+.box1{
+    font-size: 20px;
+}
+
+
+
+

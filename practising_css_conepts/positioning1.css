@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 500px;
+    height: 500px;
+    background-color: gray;
+    margin: 0 auto;      
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+
+.static{
+    background-color: red;
+    position: static;
+    /* top: 200px; */
+}
+
+.relative{
+    background-color: green;
+    /* position: relative;
+    top: 100px;
+    left: 100px; */
+}
+
+.absolute{
+    background-color: blue;
+    position: absolute;
+    /* top: 100px;  */
+    z-index: 2;
+
+
+}
+
+.fixed{
+    background-color: yellow;
+    position: fixed;
+    /* top: 200px;  */
+    z-index: 1;
+} 
+
+.sticky{
+    background-color: pink;
+    position: sticky;
+    top: 100px;
+}

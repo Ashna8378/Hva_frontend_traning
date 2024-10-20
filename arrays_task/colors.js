@@ -73,6 +73,7 @@ let colors = ["red", "green", "blue"]
 
 
 
+
 // for(const property in colors){
 //     console.log(`${property} ${colors[property]}`)
 // }
