@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+      *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      .box{
+        min-width: 100px;
+        min-height: 100px;
+        padding: 5rem;
+        color: white;
+        font-weight: bold;
+        font-size: 2rem;
+        cursor: pointer;
+      }
+
+      .grandparent{
+        background-color: #b1d4e0;
+         color: black;
+
+
+      }
+
+      .parent{
+        background: #0c2d48;
+      }
+
+       .child{
+        background: green;
+
+       }
+
+
+
+    </style>
+</head>
+<body>
+    
+    <!-- <button class="btn btn-headline" onclick = "console.log('you clicked me')">Learn more</button> -->
+
+    <!-- <button class="btn btn-headline" >Learn more</button>
+
+
+    <div class="my-buttons">
+        <button id="one">My Button One</button>
+        <button id="two">My Button Two</button>
+        <button id="three">My Button Three</button>
+    </div> -->
+
+    <!-- bubbling / capturing/ delegation -->
+
+    <main>
+        <div class="grandparent box">
+            Grandparent
+          <div class="parent box">
+            Parent
+            <div class="child box">Child</div>
+          </div>
+        </div>
+    </main>
+
+
+<script src="events.js"></script>
+</body>
+</html>
+
+
+
+

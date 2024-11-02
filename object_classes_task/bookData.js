@@ -9,10 +9,10 @@ class Book{
 
     }
     describe(){
-        return `${this.title} - ${this.author} (${this.year})`
+        console.log(`${this.title} - ${this.author} (${this.year})`)
     }
     displayGenre(){
-        return `Genre: ${this.genre}`
+        console.log(`Genre: ${this.genre}`)
     }
 }
 

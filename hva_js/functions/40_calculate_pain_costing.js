@@ -1,7 +1,6 @@
 
 // Define Callback Functions for Area Calculations:
 
-
 function areaOfRectangle(length,width){
     return length * width
 }
@@ -25,7 +24,7 @@ function calculatePaintingCost(dimension1,dimension2,calculateArea){
 }
 
 console.log(calculatePaintingCost(5,10,areaOfRectangle))
-console.log(calculatePaintingCost(5,null,areaOfCircle))
-console.log(calculatePaintingCost(5,10,areaOfTriangle))
+console.log(calculatePaintingCost(3,null,areaOfCircle))
+console.log(calculatePaintingCost(6,8,areaOfTriangle))
 
 

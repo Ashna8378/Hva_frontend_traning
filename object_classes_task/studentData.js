@@ -97,7 +97,7 @@ class Student {
    
     greet(){
         console.log(`Hello, ${this.name}`);
-
+    
     }
     getFullAddress(){
          return `${this.address.country} ${this.address.city} ${this.address.pin_code}`

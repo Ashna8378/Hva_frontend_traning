@@ -1,16 +1,16 @@
-//a. forEachArray Function-----------------------------------------------------
+// a. forEachArray Function-----------------------------------------------------
 
-// function forEachArray(arr, callback) {
-//     for (let i = 0; i < arr.length; i++) {
-//         callback(arr[i]);
-//     }
-// }
+function forEachArray(arr, callback) {
+    for (let i = 0; i < arr.length; i++) {
+        callback(arr[i]);
+    }
+}
 
-// const numbers = [1, 2, 3, 4];
+const numbers = [1, 2, 3, 4];
 
-// forEachArray(numbers, function(num) {
-//     console.log(num);  
-// })
+forEachArray(numbers, function(num) {
+    console.log(num);  
+})
 
 // b mapArray Function:
 
