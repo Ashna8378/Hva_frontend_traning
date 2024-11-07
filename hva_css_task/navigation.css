@@ -1,31 +1,43 @@
-
-
-ul{
+ul {
     list-style: none;
 }
 
-.navbar{
+.navbar {
     background-color: blueviolet;
     padding: 10px;
 }
 
-
-
-#list3{
-    color: red;
+#list3 a {
+    color: red; 
 }
 
 
-li::before{
-    content: "*";
+
+li::before {
+    content: "*"; 
     color: orange;
-    margin: 10px;
+    margin-right: 10px;
 }
-ul ul li{
+
+ul > li {
+    font-size: 18px; 
+}
+
+ul ul li {
     color: yellow;
 }
 
-a{
-    color: red;
+ul > li + li {                            
+    background-color: lightblue; 
 }
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+
+
 

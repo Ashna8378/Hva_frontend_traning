@@ -6,13 +6,13 @@ h1{
     color: red;
 }
 
-p:first-of-type{
+p{
     font-family: Arial;
     font-size: 16px;
     
 }
 
-p:last-of-type{
+.para2{
     font-weight: bold;
     font-style: italic;
 }

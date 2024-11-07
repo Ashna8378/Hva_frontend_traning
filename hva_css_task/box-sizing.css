@@ -8,10 +8,14 @@
     padding: 20px;
     margin: 20px auto;
     background-color: #f0f0f0;
-    box-sizing: content-box;
 }
 
 .box-demo-1{
     box-sizing: border-box;
 }
+
+.box-demo-2{
+    box-sizing: content-box;
+}
+
 

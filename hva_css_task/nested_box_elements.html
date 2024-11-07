@@ -3,24 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nested Box Elements</title>
     <link rel="stylesheet" href="nested_box_elements.css">
 </head>
 <body>
     <div class="outer-container">
         <h2>Outer Container</h2>
-        <div class="independent-box-1">
-            <h1>Independent box 1</h1>
-        </div>
-        <div class="independent-box-2">
-            <p>Independent box 2</p>
-        </div>
-    <div class="nested-container-1">
-        <h3>Nested container 1</h3>
-        <div class="nested-container-2">
-            <p>This is nested container 2</p>
+        <div class="nested-container-1">
+            <h3>Nested Container 1</h3>
+          <div class="nested-container-2">
+            <p>This is Nested Container 2, inside Nested Container 1</p>
+          </div>
         </div>
     </div>
+    <div class="independent-box-1">
+      <p>Independent Box 1</p>
+      <div class="independent-box-2">
+        <p>Independent Box 2</p>
+      </div>
     </div>
 </body>
 </html>

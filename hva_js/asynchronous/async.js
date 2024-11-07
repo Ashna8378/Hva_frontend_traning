@@ -2,6 +2,12 @@
 // single threaded means can only execute one command at a time in a specific order 
 
 
+// asynchronous 
+
+// Asynchronous js refers to the ability of js code to execute non-blocking operation 
+// allowing other code to run simultaneously without waiting for the completion of asynchronous task 
+
+
 // Everything in javascript happens inside an Global execution context 
 
 // GLobal execution context is looks like a big box and it has two phases in it 
