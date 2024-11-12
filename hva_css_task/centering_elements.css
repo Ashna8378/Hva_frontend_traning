@@ -8,6 +8,7 @@
 
 .inline-element{
     border: 1px solid #007BFF;
+    padding: 5px;
 }
 
 .inline-block-container{
@@ -25,7 +26,6 @@
     width: 200px;
     border: 2px solid #333;
     padding: 10px;
-    /* text-align: center; */    
 }
 
                                   

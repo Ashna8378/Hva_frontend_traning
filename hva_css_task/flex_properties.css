@@ -1,60 +1,23 @@
-
-
-.container{
+.container {
     display: flex;
     border: 2px dashed black;
-    /* width: 500px; */
+    width: 500px;
     margin: auto;
 }
 
-.box{
+.box {
     box-sizing: border-box;
-    background-color:  #c3dbeb;
+    background-color: #c3dbeb;
     border: 2px solid #608BA8;
     height: 100px;
-   
-
 }
 
-/* .box1, .box2, .box3 {
-    flex-basis: 200px;
-} */
-.box1{
-    flex-basis: 200;
+/* Step 1: Set initial flex-basis */
+.box1, .box2, .box3 {
+    flex-basis: 100px;
 }
 
-/* .box1, .box2, .box3 {
-    flex-shrink: 0;
-}
-
-.box1 {
-    flex-shrink: 1;
-}
-
-.box2 {
-    flex-shrink: 1;
-}
-
-.box3 {
-    flex-shrink: 2;
-} */
-
-
-
-/* 
- .box1 {
-    flex-shrink: 0;
-}
-
-.box2 {
-    flex-shrink: 2;
-}
-
-.box3 {
-    flex-shrink: 3;
-}  */
-
-/* 
+/* Step 2: Flex-grow settings for available space */
 .box1 {
     flex-grow: 2;
 }
@@ -65,18 +28,51 @@
 
 .box3 {
     flex-grow: 1;
-} */
-
-
-
-/* .box1 {
-    flex-grow: 3;
 }
 
+/* Alternate values for flex-grow  */
+
+/*
+.box1 {
+    flex-grow: 3;
+}
 .box2 {
     flex-grow: 0;
 }
-
 .box3 {
     flex-grow: 2;
-} */
+}
+*/
+
+/* Step 3: Increase flex-basis and disable shrinking */
+.box1, .box2, .box3 {
+    flex-basis: 200px;
+    flex-shrink: 0;
+}
+
+/* Step 4: Adjust flex-shrink to handle deficit space */
+.box1 {
+    flex-shrink: 1;
+}
+
+.box2 {
+    flex-shrink: 1;
+}
+
+.box3 {
+    flex-shrink: 2;
+}
+
+/* Alternative flex-shrink values*/
+
+/*
+.box1 {
+    flex-shrink: 0;
+}
+.box2 {
+    flex-shrink: 2;
+}
+.box3 {
+    flex-shrink: 3;
+}
+*/

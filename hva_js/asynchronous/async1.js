@@ -14,22 +14,24 @@
 
 // setTimeout 
 
-// console.log("Script start")
+console.log("Script start")
 
 
-// const id = setTimeout(()=>{
-//     console.log("inside settime out")
-// },1000)
+const id = setTimeout(()=>{
+    console.log("inside settime out")
+},1000)
 
-// for(let i = 0; i < 100; i++){
-//     console.log("...")
-// }
+for(let i = 0; i < 100; i++){
+    console.log("...")
+}
 
-// console.log("settimeout id is ", id)
-// console.log("clearing time out")
+console.log("settimeout id is ", id)
+console.log("clearing time out")
 // clearTimeout(id)
 
-// console.log("script end")
+console.log("script end")
+
+
 
 
 // setInterval ----------------
@@ -76,16 +78,16 @@
 
 // asynchronous programming
 
-const heading1 = document.querySelector(".heading1")
-const heading2 = document.querySelector(".heading")
-const heading3 = document.querySelector(".heading3")
-const heading4 = document.querySelector(".heading4")
-const heading5 = document.querySelector(".heading5")
-const heading6 = document.querySelector(".heading6")
-const heading7 = document.querySelector(".heading7")
-const heading8 = document.querySelector(".heading8")
-const heading9 = document.querySelector(".heading9")
-const heading10 = document.querySelector(".heading10")
+// const heading1 = document.querySelector(".heading1")
+// const heading2 = document.querySelector(".heading")
+// const heading3 = document.querySelector(".heading3")
+// const heading4 = document.querySelector(".heading4")
+// const heading5 = document.querySelector(".heading5")
+// const heading6 = document.querySelector(".heading6")
+// const heading7 = document.querySelector(".heading7")
+// const heading8 = document.querySelector(".heading8")
+// const heading9 = document.querySelector(".heading9")
+// const heading10 = document.querySelector(".heading10")
 
 // setTimeout(()=>{
 //      heading1.textContent = "one"
@@ -298,35 +300,35 @@ const heading10 = document.querySelector(".heading10")
 // solve callback hell by promise----------------------------
 
 
-function changeText(element, text, color, time){
-    return new Promise((res,rej)=>{
-        setTimeout(()=>{
-            if(element){
-              element.textContent = text
-              element.style.color = color
-              res()
-            }else(
-                rej("element not found")
-            )
+// function changeText(element, text, color, time){
+//     return new Promise((res,rej)=>{
+//         setTimeout(()=>{
+//             if(element){
+//               element.textContent = text
+//               element.style.color = color
+//               res()
+//             }else(
+//                 rej("element not found")
+//             )
           
-        },time)
-    })
-}
+//         },time)
+//     })
+// }
 
 
 
-changeText(heading1, "one", "red", 1000)
-.then(()=>changeText(heading2, "two", "red", 1000))
-.then(()=>changeText(heading3, "three", "green", 1000) )
-.then(()=>changeText(heading4, "four", "pink", 1000) )
-.then(()=>changeText(heading5, "five", "orange", 1000))
-.then(()=>changeText(heading6, "six", "black", 1000))
-.then(()=>changeText(heading7, "seven", "blue", 1000))
-.then(()=>changeText(heading8, "eight", "sky", 1000))
-.then(()=>changeText(heading9, "nine", "yellow", 1000))
-.then(()=>changeText(heading10, "ten", "red", 1000))
-.catch((error)=>{
-    alert(error)
-})
+// changeText(heading1, "one", "red", 1000)
+// .then(()=>changeText(heading2, "two", "red", 1000))
+// .then(()=>changeText(heading3, "three", "green", 1000) )
+// .then(()=>changeText(heading4, "four", "pink", 1000) )
+// .then(()=>changeText(heading5, "five", "orange", 1000))
+// .then(()=>changeText(heading6, "six", "black", 1000))
+// .then(()=>changeText(heading7, "seven", "blue", 1000))
+// .then(()=>changeText(heading8, "eight", "sky", 1000))
+// .then(()=>changeText(heading9, "nine", "yellow", 1000))
+// .then(()=>changeText(heading10, "ten", "red", 1000))
+// .catch((error)=>{
+//     alert(error)
+// })
 
 

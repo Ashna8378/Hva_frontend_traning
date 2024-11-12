@@ -1,6 +1,5 @@
-
-
-.column-2,.column-3{
+/* Styling columns */
+.column-2, .column-3 {
     display: inline-block;
     height: 200px;
     background-color: #f0f0f0;
@@ -9,32 +8,29 @@
     box-sizing: border-box;
 }
 
-.column-2{
+/* Column widths */
+.column-2 {
     width: 49%;
-
 }
 
-.column-3{
+.column-3 {
     width: 32%;
-    
 }
 
-.header, .footer, .main-content{
+/* Header, footer, and main content styling */
+.header, .footer, .main-content {
     border: 2px solid black;
-
 }
 
-.header, .footer{
-    background-color: #4CAF50 ;
+/* Header and footer specific styling */
+.header, .footer {
+    background-color: #4CAF50;
     height: 50px;
     line-height: 50px;
     text-align: center;
-
 }
 
-
-.row{
+/* Row styling */
+.row {
     margin-bottom: 20px;
 }
-
-

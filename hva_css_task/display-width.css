@@ -22,6 +22,7 @@
     display: inline;
     border: 1px dashed #007BFF;
     padding: 5px;
+    margin-right: 10px;
 }
 
 .inline-element-fixed{

@@ -23,21 +23,17 @@
         width: 50%;
 
      }
-
-
 }
-
-
 
 @media only screen and (max-width: 480px) {
     
     .box{
        background-color:   #90ee90;
        border-radius: 15px;
-       font-size: 18px;
 
     }
-
-
+    h1{
+      font-size: 18px;
+    }
 }
 

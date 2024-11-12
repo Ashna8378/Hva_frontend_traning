@@ -1,20 +1,26 @@
-
-
-
-.float-left{
+/* Float the first image to the left */
+.float-left {
     float: left;
 }
 
-
-.float-right{
+/* Float the second image to the right */
+.float-right {
     float: right;
 }
 
-
-.second-paragraph{
-    clear: both;
+/* Start by clearing only left-floated elements */
+.second-paragraph {
+    clear: left;
 }
 
+/* Uncomment the following lines one at a time to experiment with clearing different floats */
 
+ .second-paragraph {
+    clear: right;
+} 
 
+/* Clear both left- and right-floated elements */
 
+ .second-paragraph {
+    clear: both;
+} 

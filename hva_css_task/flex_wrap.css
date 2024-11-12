@@ -18,7 +18,6 @@
 
 .box1, .box2, .box3 {
     flex-basis: 200px;
-    flex-shrink: 0;
 }
 
 
