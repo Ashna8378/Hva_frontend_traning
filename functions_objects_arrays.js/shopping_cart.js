@@ -17,13 +17,12 @@ function calculateTotalPrice(cart){
     return totalPrice   
 }
 
+
 // c. Call the calculateTotalPrice Function:
 
 const totalPrice = calculateTotalPrice(cart)
 
 console.log(totalPrice)
-
-
 
 
 

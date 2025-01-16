@@ -1,101 +1,58 @@
 // a. Define the Array of Products--------------------------------------------------------------------------------------------------
 
 const products = [
-    { id: 1, name: 'Banana', price: 50, category: 'food' },
-    { id: 2, name: 'phone', price: 1000, category: 'Electronics' },
-    { id: 3, name: 'Apple', price: 10, category: 'food' },
-    { id: 4, name: 'cooler', price: 500, category: 'Electronics'}
-]
-
-
+    { id: 1, name: 'Banana', price: 50, category: 'Food' },
+    { id: 2, name: 'Phone', price: 1000, category: 'Electronics' },
+    { id: 3, name: 'Apple', price: 10, category: 'Food' },
+    { id: 4, name: 'Cooler', price: 500, category: 'Electronics' }
+];
 
 // b. Define the displayProducts Function----------------------------------------------------------------------
 
+function displayProducts(productsArray) {
+    productsArray.forEach((product) => {
+        console.log(`${product.name} - $${product.price}`);
+    });
+}
 
-// function displayProducts(productsArray){
+displayProducts(products);
 
-//     productsArray.forEach((product)=>{
-//         console.log(`${product.name} - $${product.price}`)
+// c. Calculate and Display Products with Tax---------------------------------------------------------------------------------
 
-//     })
-// }
-// displayProducts(products)
+const taxRate = 0.10;
 
+const productsWithTax = products.map(product => {
+    return {
+        id: product.id,
+        name: product.name,
+        category: product.category,
+        priceWithTax: product.price + (product.price * taxRate) 
+    };
+});
 
-// c. Calculate and DisplayProducts with Tax---------------------------------------------------------------------------------
-
-// const taxRate = 0.10;
-
-// const productsWithTax = products.map(product => {
-//     return {
-//         id: product.id,
-//         name: product.name,
-//         category: product.category,
-//         priceWithTax: product.price + (product.price * taxRate)
-//     };
-// });
-
-
-// console.log(productsWithTax)
-// productsWithTax.forEach(product => {
-//     console.log(`${product.name} - $${product.priceWithTax}`);
-// });
+console.log("Products with Tax:");
+displayProducts(productsWithTax.map(product => ({ name: product.name, price: product.priceWithTax })));
 
 // d. Filter and Display Food Products----------------------------------------------------------------------------------
 
-// const foodProducts = products.filter((product)=>{
-//     return product.category === 'food'
-// });
+const foodProducts = products.filter(product => product.category === 'Food');
 
-// foodProducts.forEach(product => {
-//     console.log(`${product.name} - $${product.price}`);
-// });
+console.log("Food Products:");
+displayProducts(foodProducts);
 
+// e. Find and Display Affordable Products----------------------------------------
 
-// e. Filter and Display Food Products----------------------------------------
+const affordableProducts = products.filter(product => product.price < 100);
 
+const affordableProductsStrings = affordableProducts.map(product => `${product.name} - $${product.price}`);
 
-// const affordableProducts = products.filter((product)=>{
-//     return product.price < 100
-// })
-
-// const affordableProductsStrings = affordableProducts.map((product)=>{
-//     return `${product.name} $${product.price}`
-// })
-
-// console.log(affordableProducts)
-
-// console.log(affordableProductsStrings)
+console.log("Affordable Products:");
+console.log(affordableProductsStrings);
 
 // f. Calculate Total Price-----------------------------------------------------------------------
 
-// totalPrice = 0
-// products.forEach((product)=>{
-//       totalPrice += product.price
-// })
-// console.log(totalPrice)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+let totalPrice = 0;
+products.forEach(product => {
+    totalPrice += product.price;
+});
+console.log(`Total Price: $${totalPrice}`);

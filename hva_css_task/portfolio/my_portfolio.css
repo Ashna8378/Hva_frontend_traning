@@ -65,7 +65,7 @@ nav{
 }
 
 .home-text h1{
-    font-size: 3em;
+    font-size: 2em;
     margin-bottom: 0.3em;
     font-family: 'Montserrat', sans-serif;
 }
@@ -276,6 +276,115 @@ button {
 button:hover {
     background-color: #0056b3; /* Darker color on hover */
 }
+#lines{
+    display: none;
+}
+.lines{
+    display: none;
+}
 
+/* style for small screen like smart phones */
+@media (max-width: 568px) {
+    .lines{
+        display: block;
+        position: absolute;
+        right: 0;
+        padding: 20px;
+    }
+    .nav-links{
+        display: flex;
+        
+    }
+    .home-text h1{
+        font-size: 30px;
+    }
+    .nav-links{
+        display: none;
+    }
+    .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        /* padding: 5px 10px; */
+    }
+    
+    .nav-links a:hover {
+        background-color: #555;
+        border-radius: 5px;
+    }
+    input[type="checkbox"]:checked ~ .nav-links {
+        display: flex;
+        width: 100%;
+        line-height: 50px;
+        flex-direction: column;
+        position: absolute;
+        background-color: #333;
+        justify-content: center;
+        transition: 2s;
+        top: 50px;
+    }
+    .home{
+        display: flex;
+        align-items: center;
+        background-color: #f4f4f4;
 
+    }
+    .home-text{
+        margin-top: 100px;
+        
+    }
+}
+@media (max-width: 768px) {
+    .lines {
+        display: block;
+        transform: rotate(50);
+        /* rotate: calc(50); */
+    }
 
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: relative;
+        top: 60px;
+        width: 100%;
+        background-color: #333;
+    }
+
+    .nav-links a {
+        /* padding: 10px 20px; */
+    }
+
+    #lines:checked ~ .nav-links {
+        display: flex;
+    }
+    .home-text h1 {
+        font-size: 1em !important;
+        margin-top: 53px;
+    }
+    .home-text p {
+        font-size: 1em !important;
+        margin-top: 30px;
+    }
+    .home {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-image img {
+        margin-top: -10rem;
+        width: 150px;
+        order: 1;
+    }
+    .about{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 50px;
+    }
+    .projects{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    .project-card{
+        width: 100%;
+    }
+}

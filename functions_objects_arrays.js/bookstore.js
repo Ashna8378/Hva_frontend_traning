@@ -45,18 +45,18 @@ addBook(5, 'alien', 'hathim', 500, 6)
 
 // e. Define the updateBook Function-----------------------------------------------------------------------
 
-// function updateBook(id, newquantity){
+function updateBook(id, newquantity){
 
-//     const book = inventory.find((book)=>{
-//         return book.id === id
-//     })
-//     if(book){
-//         book.quantity = newquantity
-//     }
-//     else{
-//         console.log(`book with the ${id} not found`)
-//     }
-// }
+    const book = inventory.find((book)=>{
+        return book.id === id
+    })
+    if(book){
+        book.quantity = newquantity
+    }
+    else{
+        console.log(`book with the ${id} not found`)
+    }
+}
 
 function updateBookMap(id, newQuantity){
     inventory.map((book)=>{
@@ -75,9 +75,6 @@ updateBookMap(3,800)
 // f. Define the removeBook Function---------------------------------------------------------------------
 
 
-
-
-
 function removeBook(id) {
     inventory = inventory.filter((book) => {
        return book.id !== id
@@ -87,6 +84,7 @@ removeBook(1)
 
 
 displayBooks()
+
 
 
 

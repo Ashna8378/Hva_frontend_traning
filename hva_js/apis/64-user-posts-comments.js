@@ -1,7 +1,9 @@
 document.getElementById('fetchPostsBtn').addEventListener('click', fetchPostsAndComments);
 
 function fetchPostsAndComments() {
+
   // Get the User ID from the input field
+
   const userId = document.getElementById('userId').value;
   
   if (!userId) {
@@ -13,16 +15,19 @@ function fetchPostsAndComments() {
   postsContainer.innerHTML = ''; // Clear any previous posts or comments
 
   // Fetch posts based on User ID using .then()
+
   fetch(`https://jsonplaceholder.typicode.com/posts?userId=${userId}`)
     .then((response) => response.json())
     .then((posts) => {
       // Check if posts exist for the given User ID
+
       if (posts.length === 0) {
         postsContainer.textContent = 'No posts found for this User ID.';
         return;
       }
 
       // Iterate over each post and fetch comments for each post
+
       posts.forEach((post) => {
         // Create and display each post
         const postDiv = document.createElement('div');
@@ -34,14 +39,18 @@ function fetchPostsAndComments() {
         postsContainer.appendChild(postDiv);
 
         // Fetch comments for this post using .then()
+
         fetch(`https://jsonplaceholder.typicode.com/comments?postId=${post.id}`)
           .then((response) => response.json())
           .then((comments) => {
+
             // Create a div for comments
+
             const commentsDiv = document.createElement('div');
             commentsDiv.classList.add('comments');
 
             // Display comments for the post
+
             comments.forEach((comment) => {
               const commentDiv = document.createElement('div');
               commentDiv.classList.add('comment');
@@ -53,6 +62,7 @@ function fetchPostsAndComments() {
             });
 
             // Append the comments to the post
+
             postDiv.appendChild(commentsDiv);
           })
           .catch((error) => {
@@ -66,6 +76,7 @@ function fetchPostsAndComments() {
       postsContainer.textContent = 'Failed to load posts. Please try again later.';
     });
 }
+
 
 
 
